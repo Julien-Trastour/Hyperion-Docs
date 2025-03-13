@@ -31,15 +31,24 @@ Charlie → Client → Peut voir son abonnement
 | **Manager** | Superviser les techniciens et vendeurs, analyser les performances |
 
 ## 📡 Endpoints API
+### 🔑 **Gestion des Rôles**
 - `GET /roles` → Liste des rôles existants.  
 - `POST /roles` → Création d’un rôle personnalisé.  
 - `DELETE /roles/:id` → Suppression d’un rôle.  
+
+### 🔏 **Gestion des Permissions**
 - `GET /permissions` → Liste des permissions disponibles.  
+- `POST /permissions` → Création d’une permission personnalisée.  
+- `DELETE /permissions/:id` → Suppression d’une permission.  
 - `PATCH /users/:id/roles` → Attribution d’un rôle à un utilisateur.  
+- `PATCH /users/:id/permissions` → Ajout ou suppression de permissions spécifiques pour un utilisateur.  
 
 ## 🔐 Sécurité et Bonnes Pratiques
 ✅ **Principe du moindre privilège** → Un utilisateur n’a accès qu’aux actions nécessaires.  
 ✅ **Rôles hiérarchiques** → Permet de déléguer certaines responsabilités.  
 ✅ **Journaux d’accès** → Chaque action administrative est enregistrée pour audit.  
+✅ **JWT Vérifié sur chaque requête sécurisée.**  
+✅ **Tests Jest validés avec couverture complète des endpoints.**  
+✅ **Contrôle d’accès basé sur les permissions stockées en base.**  
 
 ---
