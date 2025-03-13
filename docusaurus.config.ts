@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://Julien-Trastour.github.io',
-  baseUrl: '/hyperion-docs/',
+  baseUrl: '/Hyperion-Docs/',
 
   organizationName: 'Julien-Trastour',
   projectName: 'hyperion-docs',
